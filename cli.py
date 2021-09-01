@@ -14,8 +14,6 @@ while True:
         password = input("What is the master password: ")
 
         manager.parse_option(option, password)
-    elif option.lower() == "logout":
-        manager.parse_option(option)
     elif option.lower() == "add":
         name = input("Name of record: ")
         email = input("Email of record: ")
@@ -32,9 +30,7 @@ while True:
         email = input("Email of record: ")
 
         manager.parse_option(option, name, email)
-    elif option.lower() == "aget":
-        manager.parse_option(option)
-    elif option.lower() == "help":
-        manager.parse_option(option)
     else:
         manager.parse_option(option)
+
+    print("----------------------------------------")
